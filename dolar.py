@@ -6,8 +6,8 @@ from mastodon import Mastodon
 
 locale.setlocale(locale.LC_ALL, 'es_VE.UTF-8')
 
-access_token = 'QgpYOrKAZWYZbROlc1O-NWPs5xw8ee1OzMrSv5Mt4AU'
-mastodon_url = 'https://vzla.masto.host/'
+access_token = 'token_de_mastodon'
+mastodon_url = 'url_de_servidor_de_mastodon'
 
 mastodon = Mastodon(
 	access_token=access_token,
