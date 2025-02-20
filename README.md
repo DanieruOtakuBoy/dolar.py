@@ -5,11 +5,11 @@ API del precio del dólar a bolívares: https://github.com/fcoagz/api-pydolarven
 
 Publicado originalmente bajo la licencia Apache 2.0.
 
-# Descarga de paquetes necesarios
+## Descarga de paquetes necesarios para su ejecución
 
 Para usar el programa se recomienda el uso la terminal de Linux (de preferencia una distribución basada en Debian o Ubuntu), Virtualenv, Python en su última versión, y las librerías de Mastodon.py y requests.
 
-## Pasos
+### Pasos
 
 * Actualizar los repositorios:
 
@@ -61,7 +61,7 @@ Para usar el programa se recomienda el uso la terminal de Linux (de preferencia 
 
   En dicho comando, "python" es el directorio o carpeta que creará Virtualenv para almacenar los archivos y las aplicaciones necesarias, dicho directorio o carpeta puede llevar cualquier nombre a parte de python, solo es un nombre de ejemplo.
 
-* Descarga de librerias necesarias:
+* Descargar librerias necesarias:
 
   Las librerias requeridas para que la aplicación de Python funcione correctamente son Mastodon.py y requests, estas dos pueden instalarse fácilmente desde la propia terminal.
 
@@ -84,7 +84,7 @@ Para usar el programa se recomienda el uso la terminal de Linux (de preferencia 
 
   Ya con los paquetes y librerias necesarios para su uso, y el entorno virtual activado, se puede utilizar el archivo (apropiadamente configurado con su propia API en la cuenta bot de Mastodon) o crear un archivo personalizado diferente, que utilice una API o comandos diferentes.
 
-# Uso
+## Uso
 
 Para usar la aplicación primero hay que activar el entorno virtual que se ha creado (en caso de no estar activado), para ello se ejecuta el siguiente comando.
 
@@ -98,8 +98,16 @@ Ya con el entorno activado, demostrado al tener (python) en el comienzo de la te
   python /home/(usuario_del_ordenador)/python/dolar.py
 ```
 
-Si el programa se ejecuta con normalidad, mostrará el mensaje siguiente.
+El directorio en ese comando muestra que la aplicación dolar.py se encuentra almacenado en la carpeta "python" que se encuentra ubicada en la carpeta personal del usuario del ordenador, sin embargo, puede estar almacenada y ser ejecutada en cualquier parte del sistema de archivos que el usuario encuentre más cómoda y óptima.
+
+Tras una corta espera de algunos segundos, si el programa se ejecuta con normalidad, mostrará el mensaje siguiente.
 
 ```
   Toot enviado con éxito.
 ```
+
+## Código de dolar.py
+
+La aplicación dolar.py contiene varios procesos y comandos internos de Python y Mastodon.py, junto con su token de acceso. Para comprender mejor estos datos recomiendo leer o aprender sobre la documentación del lenguaje de programación Python y Mastodon.py.
+
+[Documentación de Mastodon.py](https://mastodonpy.readthedocs.io/en/stable/)
