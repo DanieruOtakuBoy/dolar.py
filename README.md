@@ -110,4 +110,6 @@ Tras una corta espera de algunos segundos, si el programa se ejecuta con normali
 
 La aplicación dolar.py contiene varios procesos y comandos internos de Python y Mastodon.py, junto con su token de acceso. Para comprender mejor estos datos recomiendo leer o aprender sobre la documentación del lenguaje de programación Python y Mastodon.py.
 
-[Documentación de Mastodon.py](https://mastodonpy.readthedocs.io/en/stable/)
+[Documentación de Mastodon.py (en inglés)](https://mastodonpy.readthedocs.io/en/stable/)
+
+[Documentación de Python 3.13.2 (en español)](https://docs.python.org/es/3/index.html)
