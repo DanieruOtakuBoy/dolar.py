@@ -39,7 +39,10 @@ if response1.status_code & response2.status_code & response3.status_code & respo
 		euro_par = locale.format_string("%.2f", data4['price'], grouping=True)
 
 	for item in data2:
-		time = data2['last_update']
+		time_d = data2['last_update']
+
+	for item in data2:
+		time_e = data4['last_update']
 
 	for item in data1:
 		tasa_d_bcv = data1['symbol']
@@ -56,11 +59,11 @@ if response1.status_code & response2.status_code & response3.status_code & respo
 		mensaje = (f"¡Hola, Fediverso!\n\nTipo de cambio en #Venezuela para el día de hoy.\n\n"
 				f"Dólar = {dolar_bcv} Bs (BCV) {tasa_d_bcv} | {dolar_par} Bs (paralelo) {tasa_d_par}\n"
 				f"Euro = {euro_bcv} Bs (BCV) {tasa_e_bcv} | {euro_par} Bs (paralelo) {tasa_e_par}\n"
-                f"\nFecha de la última actualización: {time}\n\nFuente: Criptodólar\n"
+                f"\nFecha de la última actualización:\nDólar = {time_d}\nEuro = {time_e}\n\nFuente: Criptodólar\n"
 				f"\nEsto es todo por ahora, hasta la próxima actualización.")
 
 		mastodon.toot(mensaje)
-
+		
 		print("Toot enviado con éxito.")
 		
 		break
@@ -68,5 +71,4 @@ if response1.status_code & response2.status_code & response3.status_code & respo
 else:
 	
 	print("Error al obtener los datos de la API.")	
-	
 	
