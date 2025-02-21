@@ -5,6 +5,8 @@ API del precio del dólar a bolívares: https://github.com/fcoagz/api-pydolarven
 
 Publicado originalmente bajo la licencia Apache 2.0.
 
+[Captura de pantalla de ejemplo de la publicación ejecutada en la aplicación](https://github.com/DanieruOtakuBoy/dolar.py/blob/main/ejemplo.png)
+
 ## Descarga de paquetes necesarios para su ejecución
 
 Para usar el programa se recomienda el uso la terminal de Linux (de preferencia una distribución basada en Debian o Ubuntu), Virtualenv, Python en su última versión, y las librerías de Mastodon.py y requests.
