@@ -29,8 +29,8 @@ if dia == 2:
 if dia == 3:
     futuro = "El precio del dólar y el euro (BCV) para el día viernes será de:"
 
-if dia == 5 or dia == 6:
-    futuro = "El precio del dólar y el euro (BCV) para la siguiente semana será de:"
+if dia == 4 or dia == 5 or dia == 6:
+    futuro = "El precio del dólar y el euro (BCV) para el siguiente lunes será de:"
 
 response1 = requests.get('https://pydolarve.org/api/v1/dollar?page=criptodolar&monitor=bcv&format_date=default&rounded_price=false')
 response2 = requests.get('https://pydolarve.org/api/v1/dollar?page=criptodolar&monitor=enparalelovzla&format_date=default&rounded_price=false')
@@ -83,7 +83,7 @@ if response1.status_code & response2.status_code & response3.status_code & respo
 		mensaje = (f"¡Hola, Fediverso!\n\nTipo de cambio en #Venezuela para el día de hoy.\n\n"
 				f"Dólar = {dolar_bcv} Bs (BCV) {tasa_d_bcv} | {dolar_par} Bs (paralelo) {tasa_d_par}\n"
 				f"Euro = {euro_bcv} Bs (BCV) {tasa_e_bcv} | {euro_par} Bs (paralelo) {tasa_e_par}\n"
-                f"\n{futuro}\nDólar = {dolar_fut} Bs | Euro = {euro_fut} Bs.\n"
+                f"\n{futuro}\nDólar = {dolar_fut} Bs | Euro = {euro_fut} Bs\n"
                 f"\nFecha y hora de la última actualización:\nBCV = {time_bcv}\nEnParaleloVzla = {time_par}\n\nFuente: Criptodólar\n"
 				f"\nEsto es todo por ahora, hasta la próxima actualización.")
 
